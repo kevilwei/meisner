@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<title>Sliders</title>
+
+<!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+<!-- <script src="js/"></script> -->
+
+
+<!-- <script src="//code.jquery.com/jquery-latest.min.js"></script> -->
+<!-- <script src="//unslider.com/unslider.js"></script> -->
+<link href="css/style.css" rel="text/stylesheet" />
+</head>
+<body>
+	<div class="banner">
+		<ul>
+			<li style="background-image: url('img/sunset.jpg');">
+				<div class="inner">
+					<h1>The jQuery slider that just slides.</h1>
+					<p>No fancy effects or unnecessary markup, and itÕs less than 3kb.</p>
+					<a class="btn" href="#download">Download</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$('.banner').unslider({
+			speed : 500,
+			delay : 3000,
+			complete : function() {
+			},
+			keys : true,
+			dots : true,
+			fluid : false
+		});
+	</script>
+	<script src="js/unslider.js"></script>
+</body>
+</html>

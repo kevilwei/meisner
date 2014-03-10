@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Unslider &mdash; the super-tiny jQuery slider</title>
+
+<link rel="stylesheet" href="src/css/style.css">
+
+
+<script>
+	try {
+		Typekit.load();
+	} catch (e) {
+	}
+</script>
+</head>
+<body>
+	<div class="banner">
+		<ul>
+			<li style="background-image: url('src/img/sunset.jpg');">
+				<div class="inner">
+					<h1>The jQuery slider that just slides.</h1>
+					<p>No fancy effects or unnecessary markup, and it’s less than 3kb.</p>
+
+					<a class="btn" href="#download">Download</a>
+				</div>
+			</li>
+
+			<li style="background-image: url('src/img/wood.jpg');"></li>
+
+			<li style="background-image: url('src/img/subway.jpg');"></li>
+
+			<li style="background-image: url('src/img/shop.jpg');"></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="src/js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="src/js/unslider.min.js"></script>
+	<script type="text/javascript" src="src/js/jquery.event.move.js"></script>
+
+	<script>
+		if (window.chrome) {
+			$('.banner li').css('background-size', '100% 100%');
+		}
+
+		$('.banner').unslider({
+			arrows : true,
+			fluid : true,
+			dots : true
+		});
+
+		//  Find any element starting with a # in the URL
+		//  And listen to any click events it fires
+		$('a[href^="#"]').click(function() {
+			//  Find the target element
+			var target = $($(this).attr('href'));
+
+			//  And get its position
+			var pos = target.offset(); // fallback to scrolling to top || {left: 0, top: 0};
+
+			//  jQuery will return false if there's no element
+			//  and your code will throw errors if it tries to do .offset().left;
+			if (pos) {
+				//  Scroll the page
+				$('html, body').animate({
+					scrollTop : pos.top,
+					scrollLeft : pos.left
+				}, 1000);
+			}
+
+			//  Don't let them visit the url, we'll scroll you there
+			return false;
+		});
+	</script>
+</body>
+</html>

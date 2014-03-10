@@ -1,0 +1,85 @@
+<<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+
+<script type="text/javascript">
+	var req;
+
+	function createXmlHttp() {
+
+		try {
+
+			return new XMLHttpRequest();
+
+		} catch (e1) {
+
+			try {
+
+				return new ActiveXObject("Msxml2.XMLHTTP");
+
+			} catch (e2) {
+
+				try {
+
+					return new ActiveXObject("Microsoft.XMLHTTP");
+
+				} catch (e3) {
+
+					return null;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	function getPage(path) {
+
+		req = createXmlHttp();
+
+		if (req) {
+
+			req.onreadystatechange = hdlRsp;
+
+			req.open("GET", path, true);
+
+			req.send(null);
+
+		} else {
+
+			alert("浏览器不支持!");
+
+		}
+
+	}
+
+	function hdlRsp() {
+
+		if (req.readyState == 4 && req.status == 200) {
+
+			var rspText = req.responseText;
+
+			if (rspText != "") {
+
+				document.getElementById("display").innerHTML = rspText;
+				alert(rspText);
+				document.getElementById("display").style.visibility = "visible";
+			} else
+				document.getElementById("display").style.visibility = "hidden";
+		}
+	}
+</script>
+
+</head>
+<body>
+	<div id="display"
+		style="width: 500px; height: 500px; overflow: scroll; border: 1px solid #ccc;">
+		&nbsp;</div>
+	<br />
+	<input type="button" value="显示外部文本" onclick="getPage('http://www.baidu.com')" />
+</body>
+</html>

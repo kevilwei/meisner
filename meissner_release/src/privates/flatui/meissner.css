@@ -1,0 +1,380 @@
+meissner-headline.dropdown-arrow-inverse {
+	border-bottom-color: #34495e !important;
+	border-top-color: #34495e !important;
+}
+
+.container { /*bryan  */
+	width: 100% !important;
+}
+
+.meissner-headline {
+	padding: 20px 0 25px 0;
+	text-align: right;
+ 	border:2px solid green; 
+}
+
+/* bryan Mar 9th,2014 logo  */
+/* log begins */
+.meissner-logo {
+	font: 20 90px/100px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* letter-spacing: -2px; */
+	margin: 0 5px 0 0;
+ 	border:2px solid green;
+}
+
+.meissner-logo .logo {
+	background: url(../img/meissner_logo.jpg) center 0 no-repeat;
+	background-size: 300px 63px;
+	height: 63px;
+	margin: 0 0 0 0;
+	overflow: hidden;
+	/* text-indent: -9999em; */
+	/* display:inline; */
+	display: block;
+	width: 290px;
+ 	border:2px solid green;
+}
+
+.meissner-logo .brand {
+	background: url(../img/meissner_logo.jpg) left 0 no-repeat;
+	background-size: 270px 63px;
+	width: 38%;
+	height: 63px;
+	float: right; 
+	text-align:right;
+	padding-top:15px;
+	font-size:33px;
+}
+
+.meissner-logo .alis {
+	background-size: 286px 63px;
+	padding-top:17px;
+	text-align:left;
+	width: 20%;
+	height: 63px;
+	float: right;
+	font-size: 33px;
+	font-weight: 700;/* 
+	letter-spacing: 0; */
+	overflow:auto; 
+}
+.meissner-logo .pding {
+	background-size: 286px 63px;
+	padding-top:17px;
+	text-align:left;
+	width: 20%;
+	height: 63px;
+	float: right;
+	font-size: 33px;
+	font-weight: 700;/* 
+	letter-spacing: 0; */
+	overflow:auto; 
+}
+
+.meissner-logo small {
+	color: rgba(52, 73, 94, 0.30000000000000004);
+	/* display: block; */
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 0;
+	padding-top: 5px;
+}
+/* log ends */
+
+.nav_side{
+	width:10%;
+	/* height:100px; */
+}
+
+.meissner-row {
+	margin-bottom: 10px;
+}
+
+.meissner-row .meissner-heading-note,.meissner-row .meissner-text-note {
+	display: block;
+	width: 260px;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	font-size: 13px;
+	line-height: 13px;
+	color: #c0c1c2;
+	font-weight: 400;
+}
+
+.meissner-row .meissner-text-note {
+	bottom: auto;
+	top: 10px;
+}
+
+.meissner-row.typography-row .meissner-content {
+	float: none;
+	width: auto;
+	clear: both;
+}
+
+.meissner-row.typography-row .meissner-type-example {
+	padding-left: 25%;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.meissner-section-title {
+	font: 900 32px/40px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 10px 0;
+}
+
+.meissner-panel-title {
+	padding-top: 20px;
+	margin: 2px 0 20px;
+	font: bold 23px/40px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.meissner-panel-title small {
+	color: #798795;
+	font-size: inherit;
+	font-weight: 400;
+}
+
+.meissner-navigation {
+	margin-bottom: -4px;
+	margin-top: -10px;
+}
+
+.meissner-pager {
+	margin-top: -20px;
+}
+
+.meissner-tooltips {
+	height: 126px;
+}
+
+.meissner-tooltips .tooltip {
+	left: -8px !important;
+	position: relative !important;
+	top: -8px !important;
+}
+
+.meissner-headings {
+	margin-bottom: 12px;
+}
+
+.meissner-tiles {
+	margin-bottom: 46px;
+}
+
+.meissner-icons {
+	font-size: 32px;
+	margin-left: -20px;
+	padding-left: 20px;
+}
+
+.meissner-icons .meissner-content {
+	margin: 0 0 0 -35px;
+}
+
+.meissner-icons .meissner-content>span {
+	display: inline-block;
+	margin: 0 0 32px 35px;
+	width: 24px;
+	font-size: 24px;
+}
+
+.meissner-icons-tooltip {
+	bottom: 0;
+	color: #c2c8cf;
+	font-size: 12px;
+	left: 100%;
+	margin-left: 0 !important;
+	position: absolute;
+	width: 80px;
+}
+
+.meissner-illustrations .meissner-content {
+	margin: 0 0 0 -40px;
+	padding-top: 20px;
+}
+
+.meissner-illustrations .meissner-content:before,.meissner-illustrations .meissner-content:after
+	{
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.meissner-illustrations .meissner-content:after {
+	clear: both;
+}
+
+.meissner-illustrations .meissner-content>div {
+	float: left;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	margin: 0 0 40px 40px;
+	text-align: center;
+}
+
+.meissner-illustrations img {
+	display: inline-block;
+	max-height: 100px;
+	max-width: 100px;
+	vertical-align: middle;
+}
+
+.meissner-samples {
+	margin-bottom: 46px;
+}
+
+.meissner-video {
+	padding-top: 95px;
+	border-radius: 6px;
+}
+
+.meissner-download-section {
+	float: none;
+	margin: 0 auto;
+	padding: 60px 0 90px 20px;
+	text-align: center;
+}
+
+.meissner-download-section [class*='fui-'] {
+	margin: 3px 0 -3px;
+}
+
+.meissner-download {
+	background-color: #ebedef;
+	height: 190px;
+	margin: 0 auto 32px;
+	padding: 40px 28px 30px 32px;
+	text-align: center;
+	width: 190px;
+	border-radius: 50%;
+}
+
+.meissner-download img {
+	height: 104px;
+	width: 82px;
+}
+
+.meissner-download-text {
+	font-size: 15px;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.meissner-text-box a:hover {
+	color: #1abc9c;
+}
+
+.meissner-browser {
+	background: #2c3e50 url(../images/meissner/browser.png) 0 0 no-repeat;
+	background-size: 659px 42px;
+	color: #ffffff;
+	margin: 0 41px 140px 0;
+	padding-top: 42px;
+	border-radius: 0 0 6px 6px;
+}
+
+.meissner-browser-side {
+	float: left;
+	padding: 22px 20px;
+	width: 151px;
+}
+
+.meissner-browser-side>h5 {
+	font-size: 16px;
+	margin-top: 4px;
+	margin-bottom: 3px;
+	text-transform: none;
+	font-weight: 400;
+}
+
+.meissner-browser-side>h6 {
+	font-size: 11px;
+	font-weight: 300;
+	line-height: 18px;
+	margin-top: 3px;
+	text-transform: none;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.meissner-browser-author {
+	background: url(../images/meissner/browser-author.jpg) center center
+		no-repeat;
+	border: 3px solid #ffffff;
+	display: block;
+	height: 84px;
+	margin: 0 auto;
+	width: 84px;
+	border-radius: 50%;
+}
+
+.meissner-browser-action {
+	padding: 30px 0 12px;
+}
+
+.meissner-browser-action>.btn {
+	padding: 7px 0 8px 11px !important;
+	text-align: left;
+	border-radius: 3px;
+}
+
+.meissner-browser-action>.btn:before {
+	color: #ffffff;
+	content: '\e009';
+	font-size: 16px;
+	font-family: 'Flat-UI-Icons';
+	font-weight: 300;
+	margin-right: 12px;
+	position: relative;
+	top: 1px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.meissner-browser-content {
+	background-color: #34495e;
+	overflow: hidden;
+	padding: 21px 0 0 20px;
+	border-radius: 0 0 6px;
+}
+
+.meissner-browser-content>img {
+	border: 6px solid #ffffff;
+	float: left;
+	margin: 0 15px 20px 0;
+	width: 146px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) , only screen and
+		(-webkit-min-device-pixel-ratio: 1.5) , only screen and
+		(-moz-min-device-pixel-ratio: 2) , only screen and
+		(-o-min-device-pixel-ratio: 3/2) , only screen and
+		(-o-min-device-pixel-ratio: 2/1) , only screen and
+		(min--moz-device-pixel-ratio: 1.5) , only screen and
+		(min-device-pixel-ratio: 1.5) , only screen and
+	(min-device-pixel-ratio: 2) {
+	.logo {
+		background-image: url(../images/meissner/logo-mask-2x.png);
+	}
+	.meissner-browser {
+		background-image: url(../images/meissner/browser-2x.png);
+	}
+}
+
+.meissner-swatches-row [class*="col"] {
+	float: left;
+	min-height: 1px;
+}
+
+.meissner-swatches-row .swatches-col {
+	width: 800px;
+	margin-left: -5px;
+}
+
+.meissner-swatches-row .swatches-desc-col {
+	width: 140px;
+	margin-left: 20px;
+}
+
